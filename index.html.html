@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple E-Commerce Website</title>
+    <link rel="stylesheet" href="styles.css">
+	<style>
+	body {
+    font-family: Arial, sans-serif;
+    line-height: 2;
+    background-color: #f4f4f4;
+    margin: 10px;
+    padding: 30px;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 10 10px;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.products {
+    padding: 5px 5px;
+    overflow: auto; /* Clear float */
+}
+
+.product {
+    float: left; /* Display products side by side */
+    background-color: #fff;
+    border: 8px solid #ddd;
+    border-radius: 3px;
+    box-shadow: 0 0px 0px rgba(0,0,0,0.1);
+    padding: 10px 20px 30px;
+    margin: 10px 20px 30px;
+    text-align: center;
+    width: 250px;
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 5px;
+}
+
+.product h2 {
+    margin-top: 5px;
+    font-size: 1.2em;
+}
+
+.product p {
+    font-size: 1.1em;
+    color: #888;
+}
+
+.product button {
+    background-color: #4CAF50;
+    color: white;
+    border: 50px;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.product button:hover {
+    background-color: #45a049;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+</style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Simple E-Commerce</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Cart <span id="cart-count">0</span></a></li>
+					<li><a href="checkout.html">Checkout</a></li>
+					<li><a href="register.html">Delivery Details</a></li>
+<li> <a href="About Us.html">About Us</a></li>					
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="products">
+            <div class="container">
+                <div class="product">
+                    <img src="C:\Users\LENOVO\Desktop\IMAGES\download.jpg" alt="Product 1">
+					<a href="https://www.myntra.com/shop/men">click here</a>
+                    <h2>MEN'S</h2>
+                    <p>800</p>
+                    <button class="add-to-cart" data-price="800">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="C:\Users\LENOVO\Desktop\IMAGES\download (1).jpg" alt="Product 2"><BR>
+					<A HREF="https://www.myntra.com/shop/women">click here</a>
+                    <h2>WOMEN'S</h2>
+                    <p>$2000</p>
+                    <button class="add-to-cart" data-price="20S00">Add to Cart</button>
+                </div>
+				<div class="product">
+                    <img src="C:\Users\LENOVO\Desktop\IMAGES\download (2).jpg" alt="Product 2">
+                    <h2>KID'S</h2>
+                    <p>$65.00</p>
+                    <button class="add-to-cart" data-price="65.00">Add to Cart</button>
+                </div>
+				
+				
+				<div class="product">
+                    <img src="C:\Users\LENOVO\Desktop\IMAGES\download (3).jpg" alt="Product 2">
+                    <h2>HOME DECOR</h2>
+                    <p>$65.00</p>
+                    <button class="add-to-cart" data-price="65.00">Add to Cart</button>
+                </div><br>
+				<div class="product">
+                    <img src="C:\Users\LENOVO\Desktop\IMAGES\download (4).jpg" alt="Product 2">
+                    <h2>KITCHEN DECOR</h2>
+                    <p>$65.00</p>
+                    <button class="add-to-cart" data-price="65.00">Add to Cart</button>
+                </div><br><br>
+				<div class="product">
+                    <img src="C:\Users\LENOVO\Desktop\IMAGES\download (5).jpg" alt="Product 2">
+                    <h2>MAKE-UP</h2>
+                    <p>$65.00</p>
+                    <button class="add-to-cart" data-price="65.00">Add to Cart</button>
+                </div><br><br>
+				<div class="product">
+                    <img src="C:\Users\LENOVO\Desktop\IMAGES\download (6).jpg" alt="Product 2">
+                    <h2>GIFT's</h2>
+                    <p>$65.00</p>
+                    <button class="add-to-cart" data-price="65.00">Add to Cart</button>
+                </div><br><br>
+				<div class="product">
+                    <img src="C:\Users\LENOVO\Desktop\IMAGES\download (7).jpg" alt="Product 2">
+                    <h2>REFRIDGERATOR's</h2>
+                    <p>$65.00</p>
+                    <button class="add-to-cart" data-price="65.00">Add to Cart</button>
+                </div><br><br>
+				
+				
+                <!-- Add more products here -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Simple E-Commerce. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js">
+	document.addEventListener('DOMContentLoaded', function() {
+    const addToCartButtons = document.querySelectorAll('.add-to-cart');
+    const cartCount = document.getElementById('cart-count');
+    let cartCounter = 0;
+
+    addToCartButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            // Get price from data attribute
+            let price = parseFloat(button.getAttribute('data-price'));
+
+            // Update cart count
+            cartCounter++;
+            cartCount.textContent = cartCounter;
+
+            // Alert or handle cart logic (you can modify this part for your actual cart functionality)
+            alert('Added to cart: $' + price.toFixed(2));
+        });
+    });
+});
+
+	</script>
+</body>
+</html>
